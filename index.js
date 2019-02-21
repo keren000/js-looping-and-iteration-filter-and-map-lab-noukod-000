@@ -7,13 +7,13 @@ function driversWithRevenueOver(driver, revenue)
     });
 }
 
-function driversWithRevenueOver(driversArray, revenueComp) {
-	return driversArray.filter((driver) => {
-		if (driver.revenue > revenueComp){
-			return ({ name: driver.name, revenue: driver.revenue })
-		}
-	})
-};
+// function driversWithRevenueOver(driversArray, revenueComp) {
+// 	return driversArray.filter((driver) => {
+// 		if (driver.revenue > revenueComp){
+// 			return ({ name: driver.name, revenue: driver.revenue })
+// 		}
+// 	})
+// };
 
 function driverNamesWithRevenueOver(driver, revenue)
 {
