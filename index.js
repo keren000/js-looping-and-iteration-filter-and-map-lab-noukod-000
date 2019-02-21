@@ -5,10 +5,10 @@ function driversWithRevenueOver(driver, revenue)
     return drivers.revenue > revenue;});
 }
 
-function driverNamesWithRevenueOver(list, amount) {
-  let result = driversWithRevenueOver(list, amount);
-  return result.map (function (index) {
-    return index.name;
+function driverNamesWithRevenueOver(driver, amount) {
+  let result = driversWithRevenueOver(driver, amount);
+  return result.map (function (name) {
+    return name.name;
   });
 }
 
