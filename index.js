@@ -25,7 +25,7 @@ function exactMatch(driver, object)
   }
 
   else {
-    return driver.filter(function (drivers) {
+    return driver.filter((drivers) => {
       return drivers.revenue === object["revenue"];
     });
   }
