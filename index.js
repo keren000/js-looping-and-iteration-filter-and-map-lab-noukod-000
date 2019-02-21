@@ -19,7 +19,7 @@ function driverNamesWithRevenueOver(driver, revenue)
 function exactMatch(driver, object)
 {
   if (object.hasOwnProperty("name")){
-    return driver.filter(function (drivers) {
+    return driver.filter((drivers) => {
       return drivers.name === object["name"];
     });
   } else {
