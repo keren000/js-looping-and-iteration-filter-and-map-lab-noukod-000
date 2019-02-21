@@ -31,16 +31,6 @@ function exactMatch(driver, object)
   }
 }
 
-// function exactMatch(driversArray, toBeMatched) {
-// 	return driversArray.filter((driver) => {
-// 		let matchingObjects = null;
-// 		for (let property in toBeMatched) {
-// 			matchingObjects = driver[property] === toBeMatched[property]
-// 		}
-// 		return matchingObjects;
-// 	});
-// };
-
 function exactMatchToList(driver, object)
 {
   result = exactMatch(driver, object);
