@@ -26,7 +26,7 @@ function exactMatch(driver, object)
     return driver.filter(function (drivers) {
       return drivers.revenue === object["revenue"];
     });
-  });
+  }
 }
 
 // function exactMatch(driversArray, toBeMatched) {
