@@ -7,8 +7,8 @@
 //     });
 // }
 
-function driversWithRevenueOver(driversArray, revenueComp) {
-	return driversArray.filter((driver) => {
+function driversWithRevenueOver(drivers, revenueComp) {
+	return drivers.filter((driver) => {
 		if (driver.revenue > revenueComp){
 			return ({ name: driver.name, revenue: driver.revenue })
 		}
