@@ -10,7 +10,7 @@
 function driversWithRevenueOver(drivers, revenue) {
 	return drivers.filter((driver) => {
 		if (driver.revenue > revenue){
-			return ({ name: driver.name, revenue: driver.revenue })
+			return ({driver.name, driver.revenue })
 		}
 	})
 };
