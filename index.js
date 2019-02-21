@@ -23,9 +23,9 @@ function exactMatch(driver, object) {
   }
 }
 
-function exactMatchToList(list, object) {
-  let result = exactMatch(list, object);
-  return result.map (function (index) {
-    return index.name;
+function exactMatchToList(driversname, object) {
+  let result = exactMatch(driversname, object);
+  return result.map (function (driver) {
+    return driver.name;
   });
 }
