@@ -1,9 +1,19 @@
 // Code your solution here:
 function driversWithRevenueOver(driver, revenue)
 {
-  return driver.filter(function (drivers) {
-    return drivers.revenue > revenue;});
+  return driver.filter((drivers) => {
+    // return drivers.revenue > revenue;});
+    	return ({ name: driver.name, revenue: driver.revenue })
+    });
 }
+
+function driversWithRevenueOver(driversArray, revenueComp) {
+	return driversArray.filter((driver) => {
+		if (driver.revenue > revenueComp){
+			return ({ name: driver.name, revenue: driver.revenue })
+		}
+	})
+};
 
 function driverNamesWithRevenueOver(driver, revenue)
 {
