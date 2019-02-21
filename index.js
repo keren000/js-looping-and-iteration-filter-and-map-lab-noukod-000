@@ -16,14 +16,15 @@ function driverNamesWithRevenueOver(driver, revenue)
   return result.map(driver => driver.name);
 }
 
-function exactMatch(driver, object) {
-  if (object.hasOwnProperty('name')) {
+function exactMatch(driver, object) 
+{
+  if (object.hasOwnProperty("name")){
     return driver.filter(function (drivers) {
-      return drivers.name === object['name'];
+      return drivers.name === object["name"];
     });
   } else {
     return driver.filter(function (drivers) {
-      return drivers.revenue === object['revenue'];
+      return drivers.revenue === object["revenue"];
     });
   }
 }
