@@ -10,7 +10,7 @@ function driverNamesWithRevenueOver(driver, revenue) {
   // return result.map (function (name) {
   //   return name.name;
     return result.map(driver =>driver.name);
-  });
+  };
 }
 
 function exactMatch(list, object) {
