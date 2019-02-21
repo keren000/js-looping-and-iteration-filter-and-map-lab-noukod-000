@@ -26,18 +26,18 @@ function exactMatch(driver, object)
     return driver.filter(function (drivers) {
       return drivers.revenue === object["revenue"];
     });
-  });
+  }
 }
 
-function exactMatch(driversArray, toBeMatched) {
-	return driversArray.filter((driver) => {
-		let matchingObjects = null;
-		for (let property in toBeMatched) {
-			matchingObjects = driver[property] === toBeMatched[property]
-		}
-		return matchingObjects;
-	});
-};
+// function exactMatch(driversArray, toBeMatched) {
+// 	return driversArray.filter((driver) => {
+// 		let matchingObjects = null;
+// 		for (let property in toBeMatched) {
+// 			matchingObjects = driver[property] === toBeMatched[property]
+// 		}
+// 		return matchingObjects;
+// 	});
+// };
 
 function exactMatchToList(driver, object)
 {
