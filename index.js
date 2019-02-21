@@ -1,7 +1,7 @@
 // Code your solution here:
-function driversWithRevenueOver(list, amount) {
-  return list.filter(function (index) {
-    return index.revenue > amount;
+function driversWithRevenueOver(driver, revenue) {
+  return driver.filter(function (drivers) {
+    return drivers.revenue > revenue;
   });
 }
 
