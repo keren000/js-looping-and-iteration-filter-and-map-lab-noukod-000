@@ -11,10 +11,10 @@ function driverNamesWithRevenueOver(driver, revenue)
   return result.map(driver => driver.name);
 }
 
-function exactMatch(list, object) {
+function exactMatch(driver, object) {
   if (object.hasOwnProperty('name')) {
-    return list.filter(function (index) {
-      return index.name === object['name'];
+    return driver.filter(function (drivers) {
+      return drivers.name === object['name'];
     });
   } else {
     return list.filter(function (index) {
