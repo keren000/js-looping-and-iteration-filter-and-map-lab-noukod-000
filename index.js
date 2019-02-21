@@ -4,7 +4,7 @@ function driversWithRevenueOver(drivers, revenue) {
   {
 		if (driver.revenue > revenue)
     {
-      data = ({name:driver.name), revenue:driver.revenue})
+      data = ({name:driver.name, revenue:driver.revenue})
       return data;
 		}
 	})
