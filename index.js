@@ -22,7 +22,9 @@ function exactMatch(driver, object)
     return driver.filter((drivers) => {
       return drivers.name === object["name"];
     });
-  } else {
+  }
+
+  else {
     return driver.filter(function (drivers) {
       return drivers.revenue === object["revenue"];
     });
