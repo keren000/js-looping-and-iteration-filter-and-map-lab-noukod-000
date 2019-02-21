@@ -23,11 +23,8 @@ function exactMatch(driver, object) {
   }
 }
 
-function exactMatchToList(driver, object) {
-  // let result = exactMatch(driversname, object);
-  // return result.map (function (driver) {
-  //   return driver.name;
-  // });
+function exactMatchToList(driver, object)
+{
   result = exactMatch(driver, object);
   return result.map(driver => driver.name);
 }
