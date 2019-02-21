@@ -17,8 +17,8 @@ function exactMatch(driver, object) {
       return drivers.name === object['name'];
     });
   } else {
-    return list.filter(function (index) {
-      return index.revenue === object['revenue'];
+    return driver.filter(function (drivers) {
+      return drivers.revenue === object['revenue'];
     });
   }
 }
